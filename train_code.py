@@ -63,7 +63,7 @@ print(train_generator.class_indices)
 #define neural network structure 
 from keras.layers import BatchNormalization
 
-base_model = Xception(weights = None, include_top= False, input_shape=(img_width, img_height,3))
+base_model = Xception(weights = 'imagenet', include_top= False, input_shape=(img_width, img_height,3))
 
 model = Sequential()
 
